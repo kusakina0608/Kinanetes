@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kina-jenkins
+spec:
+  containers:
+  - name: kina-jenkins
+    image: jenkins/jenkins
+    ports:
+    - containerPort: 8080
